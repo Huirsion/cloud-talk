@@ -18,7 +18,7 @@
     color: #2E363E;
 }
 
-.nav__notification {
+.nav__chat_notification {
     background-color: tomato;
     color: white;
     font-weight: 600;
@@ -31,4 +31,13 @@
     position: absolute;
     left: 15px;
     bottom: 15px;
+}
+
+.nav__etc_notification {
+    background-color: tomato;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    position: absolute;
+    left: 35px;
 }
