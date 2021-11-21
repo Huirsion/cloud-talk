@@ -31,6 +31,60 @@
       </div>
     </header>
 
+    <a id="friends-display-link">
+      <i class="fas fa-info-circle"></i>
+      Friends' Names Display
+      <i class="fas fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friends-screen">
+      <!-- photo and text, subtitle
+        다른 부분에서도 사용 되기 때문에 component로 만든다.
+        avatar size는 small, midium, large 버전이 있다.
+        small : 60x60, midium : 70x70, large : 80x80 -->
+      <div class="user-component">
+        <!-- user-component는 2개의 column을 가진 div이다. -->
+        <div class="user-component__column">
+          <!-- user-component__column은 사진과 text의 flex 설정 된 부모 요소이다.
+        첫번째 user-component__column에는 사진과 text(유저 이름)가 있다. -->
+          <img
+            src="https://images.unsplash.com/photo-1579783483458-83d02161294e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=797&q=80"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <!-- user-component__avatar--xl은 변형이다.
+        user-component__avatar와 같지만 너비와 높이만 다르다. -->
+          <div class="user-component__text">
+            <h4 class="user-component__title">Huir</h4>
+            <!-- <h6 class="user-component__subtitle">blah blah blah</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="https://images.unsplash.com/photo-1605152912570-e95809793d2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=736&q=80"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Sion Channel
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span>2</span>
+            <i class="fas fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
@@ -39,16 +93,18 @@
           ></a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="chats.html">
             <span class="nav__chat_notification">1</span>
             <i class="far fa-comment fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="#"><i class="fas fa-search fa-2x"></i></a>
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="more.html">
             <div class="nav__etc_notification"></div>
             <i class="fas fa-ellipsis-h fa-2x"></i
           ></a>
