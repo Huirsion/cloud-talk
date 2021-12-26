@@ -19,3 +19,19 @@
     right: -6px;
     top: -7px;
 }
+
+.setting-badge {
+    position: absolute;
+    background-color: tomato;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 120px;
+    top: 23px;
+}
