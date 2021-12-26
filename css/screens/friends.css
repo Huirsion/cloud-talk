@@ -58,7 +58,7 @@
     font-size: 120px;
     color: white;
     animation: hideSplashScreen 0.5s ease-in-out forwards;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 /* 현재 상태로는 애니메이션이 끝나면 다시 화면을 가려버린다. 그 이유는 애니메이션이 끝나면 맨 처음의 상태로 돌아가기 때문이다.
     따라서 forwards를 추가해주면 되는데, forwards는 마지막 속성 값(final property value)을-마지막 속성값은 마지막 keyframes
