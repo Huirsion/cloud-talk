@@ -13,15 +13,14 @@
 }
 
 .main-chat {
-    margin-top: 150px;
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #chat-screen .alt-header {
     z-index: 1;
-}
-
-#chat-screen .status-bar {
-    z-index: 2;
 }
 
 /* 
@@ -31,3 +30,79 @@ z-index는 기본적으로 div가 있는 위치가 맨 앞에서 부터 몇 번�
 display 작업을 하거나, position이 고정되어 있으면 레이어가 생긴다.
 숫자가 클수록 앞으로 나온다.
 */
+
+#chat-screen .status-bar {
+    z-index: 2;
+}
+
+.chat__timestamp {
+    color: white;
+    background-color: #b1c3d1;
+    padding: 15px;
+    font-size: 14px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.message-row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.message-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 18px;
+    margin-right: 15px;
+}
+
+.message__author {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.message__info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.message__bubble {
+    background-color: white;
+    padding: 13px;
+    font-size: 15px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    /* 각 모서리에 radius를 주는 방법  */
+    margin-right: 7px;
+}
+
+.message__time,
+.message__author {
+    opacity: 0.65;
+    font-size: 13px;
+}
+
+.message-row--own {
+    justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+    background-color: var(--skyblue);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 15px;
+    margin-right: 0px;
+    margin-left: 7px;
+}
+
+/* flex의 order 기능을 사용하면 children의 순서를 바꿀 수 있다. 이 기능은 flex children에서만 작동한다.
+    하지만 이 방식은 코드의 양이 늘어나기 때문에 flex-direction: row-reverse를 쓰는 것도 좋은 방법이다.*/
+/* .message-row--own .message__bubble {
+    order: 1;
+}
+.message-row--own .message__time {
+    order: 0;
+} */
+.message-row--own .message__info {
+    flex-direction: row-reverse;
+}
