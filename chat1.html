@@ -4,9 +4,9 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Blue Talk</title>
+    <title>Chat with BlueTalk - Blue Talk</title>
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -22,19 +22,24 @@
       </div>
     </div>
 
-    <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to Blue Talk</h1>
-      <p class="welcome-header__text">
-        If you have a Blue Account, log in with your email or phone number.
-      </p>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fas fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">BlueTalk</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-bars fa-lg"></i></span>
+      </div>
     </header>
 
-    <form action="friends.html" method="GET" id="login-form">
-      <input name="username" type="text" placeholder="Email or phome number" />
-      <input name="password" type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <a href="#">Find Kokoa Account or Password</a>
-    </form>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, November 16, 2021</div>
+    </main>
 
     <script
       src="https://kit.fontawesome.com/52ac762f8e.js"

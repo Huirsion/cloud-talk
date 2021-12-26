@@ -25,7 +25,7 @@
 }
 
 .nav__etc_notification {
-    background-color: tomato;
+    background-color: var(--badge-blue);
     width: 7px;
     height: 7px;
     border-radius: 50%;

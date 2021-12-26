@@ -1,0 +1,33 @@
+#chat-screen {
+    background-color: rgb(221, 245, 255);
+    height: 1100vh;
+}
+
+#chat-screen .alt-header,
+#chat-screen .status-bar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(221, 245, 255);
+    box-sizing: border-box;
+}
+
+.main-chat {
+    margin-top: 150px;
+}
+
+#chat-screen .alt-header {
+    z-index: 1;
+}
+
+#chat-screen .status-bar {
+    z-index: 2;
+}
+
+/* 
+z-index의 기본값은 0이다. 
+z-index는 기본적으로 div가 있는 위치가 맨 앞에서 부터 몇 번째인지를 나타낸다.
+즉, layer의 순서가 몇 번째인지를 나타낸다. (포토샵 등의 레이어와 같음)
+display 작업을 하거나, position이 고정되어 있으면 레이어가 생긴다.
+숫자가 클수록 앞으로 나온다.
+*/

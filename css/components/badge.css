@@ -1,5 +1,5 @@
 .badge {
-    background-color: tomato;
+    background-color: var(--badge-blue);
     color: white;
     font-weight: 600;
     width: 25px;
@@ -11,7 +11,7 @@
 }
 
 .etc_badge {
-    background-color: tomato;
+    background-color: var(--badge-blue);
     width: 7px;
     height: 7px;
     border-radius: 50%;
@@ -22,7 +22,7 @@
 
 .setting-badge {
     position: absolute;
-    background-color: tomato;
+    background-color: var(--badge-blue);
     color: white;
     font-size: 12px;
     font-weight: 500;

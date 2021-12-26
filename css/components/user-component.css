@@ -69,9 +69,9 @@
     position: absolute;
     right: -23px;
     bottom: 0px;
-    border: 2px solid tomato;
+    border: 2px solid var(--badge-blue);
     border-radius: 50%;
-    color: tomato;
+    color: var(--badge-blue);
     padding: 4px;
     font-size: 16px;
     font-weight: 600;
