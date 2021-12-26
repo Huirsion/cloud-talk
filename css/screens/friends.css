@@ -34,6 +34,18 @@
     color: var(--gray);
 }
 
+@keyframes hideSplashScreen{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        /* 마우스에 걸리지 않게 빠져버리게 하는 것. 따라서 무언가를 숨긴다거나 할 경우에는 이것을 사용하면 안된다. 
+            html을 제거하려면 자바스크립트를 사용해야 한다. */
+    }
+}
+
 #splash-screen {
     background-color: var(--skyblue);
     position: absolute;
@@ -45,4 +57,9 @@
     align-items: center;
     font-size: 120px;
     color: white;
+    animation: hideSplashScreen 0.5s ease-in-out forwards;
+    animation-delay: 1s;
 }
+/* 현재 상태로는 애니메이션이 끝나면 다시 화면을 가려버린다. 그 이유는 애니메이션이 끝나면 맨 처음의 상태로 돌아가기 때문이다.
+    따라서 forwards를 추가해주면 되는데, forwards는 마지막 속성 값(final property value)을-마지막 속성값은 마지막 keyframes
+    으로 정해지고-애니메이션이 끝나고 유지한다. 따라서 위 경우에는 마지막 속성인 opacity: 0;이 애니메이션이 끝나도 유지된다.*/
