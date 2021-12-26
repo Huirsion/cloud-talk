@@ -55,3 +55,24 @@
     margin-bottom: 10px;
     display: block;
 }
+
+.user-component__text {
+    position: relative;
+    }
+    
+    .user-component__text span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: -23px;
+    bottom: 0px;
+    border: 2px solid tomato;
+    border-radius: 50%;
+    color: tomato;
+    padding: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    }
